@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import logo from "../../../logo.svg";//./logo.svg
+import logo from "../../../logo.svg";
 import "../../../App.css";
 import ReactTooltip from "react-tooltip";
+
 
 export const LandingPage = () => {
   return (
@@ -18,16 +20,16 @@ export const LandingPage = () => {
         <p>
           Click on the <code> link below</code> and search for your new JOB.
         </p>
-        <a
+        <Link
           data-tip
           data-for="logo"
           className="App-link"
-          href="https://reactjs.org"
+          to="/home"
           target="_blank"
           rel="noopener noreferrer"
         >
           JOB Search
-        </a>
+        </Link>
           <ReactTooltip
             id="logo"
             type="info"
